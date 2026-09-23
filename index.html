@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Manager FC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Manager FC</h1>
+
+  <div class="painel">
+    <!-- O SEU TIME -->
+    <section class="card">
+      <h2 id="meu-nome"></h2>
+      <p class="orcamento">Orçamento: R$ <span id="meu-dinheiro"></span> mi</p>
+      <p>Ataque: <span id="meu-ataque"></span> | Defesa: <span id="meu-defesa"></span></p>
+      <select id="minha-tatica">
+        <option value="defensivo">Defensivo</option>
+        <option value="equilibrado" selected>Equilibrado</option>
+        <option value="ofensivo">Ofensivo</option>
+      </select>
+      <ul id="meus-jogadores"></ul>
+      <p class="dica">Elenco: mínimo 5, máximo 7 jogadores</p>
+    </section>
+
+    <!-- A LIGA -->
+    <section class="card">
+      <h2>Classificação</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Time</th><th>P</th><th>J</th>
+            <th>V</th><th>E</th><th>D</th><th>SG</th>
+          </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+
+      <button id="btn-rodada">Jogar rodada 1</button>
+
+      <h3 id="titulo-rodada"></h3>
+      <ul id="resultados"></ul>
+      <p id="campeao"></p>
+    </section>
+
+    <!-- O MERCADO -->
+    <section class="card">
+      <h2>Mercado</h2>
+      <p class="dica">Vender paga 80% do preço</p>
+      <ul id="mercado"></ul>
+      <p id="mensagem"></p>
+    </section>
+  </div>
+
+  <button id="btn-reset" class="btn-reset">Recomeçar do zero</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

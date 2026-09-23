@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b3d1e;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+.painel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  border-radius: 12px;
+  min-width: 280px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 15px;
+}
+
+#resultados li {
+  justify-content: center;
+}
+
+.nota {
+  color: #f5c518;
+  font-weight: bold;
+}
+
+.orcamento {
+  color: #f5c518;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dica {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+select {
+  margin-top: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Tabela de classificação */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+th {
+  color: #f5c518;
+}
+
+td.nome-time {
+  text-align: left;
+}
+
+tr.meu-time {
+  background: rgba(245, 197, 24, 0.2);
+  font-weight: bold;
+}
+
+/* Botões */
+button {
+  background: #f5c518;
+  color: #0b3d1e;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.btn-pequeno {
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.btn-vender {
+  background: #e05a47;
+  color: #fff;
+}
+
+.btn-reset {
+  margin-top: 32px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+#campeao {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f5c518;
+  line-height: 1.5;
+}
+
+#mensagem {
+  min-height: 20px;
+  color: #ffd27a;
+  font-weight: bold;
+}
